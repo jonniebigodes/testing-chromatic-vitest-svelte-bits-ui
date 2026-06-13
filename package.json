@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "vitest run",
+    "chromatic:tests": "vitest run --project chromatic",
+    "test:ui": "vitest --ui",
+    "chromatic:cli": "chromatic --vitest"
   },
   "devDependencies": {
     "@chromatic-com/vitest": "^0.1.3",
