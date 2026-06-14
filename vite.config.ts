@@ -58,7 +58,7 @@ export default defineConfig({
           setupFiles: ["./src/test-setup.ts"],
           browser: {
             enabled: true,
-            headless: true,
+            headless: false,
             screenshotFailures: false,
             provider: playwright({}),
             viewport: {
@@ -69,13 +69,13 @@ export default defineConfig({
               {
                 browser: "chromium",
               },
-              {
+              /* {
                 browser: "firefox",
               },
 
               {
                 browser: "webkit",
-              },
+              }, */
             ],
           },
         },

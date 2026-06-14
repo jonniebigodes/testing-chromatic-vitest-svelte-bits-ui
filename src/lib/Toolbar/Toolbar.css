@@ -1,0 +1,19 @@
+[data-toolbar-root] {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2);
+  background-color: var(--color-slate-50);
+  border: 1px solid var(--color-slate-200);
+  border-radius: var(--spacing-2);
+}
+
+[data-toolbar-root][data-orientation="horizontal"] {
+  flex-direction: row;
+  width: auto;
+}
+
+[data-toolbar-root][data-orientation="vertical"] {
+  flex-direction: column;
+  width: fit-content;
+}
